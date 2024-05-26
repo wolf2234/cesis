@@ -129,12 +129,12 @@
 
 .slider .slick-dots {
     position: absolute;
+    top: 90%;
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    top: 80%;
+    width: 100%;
 }
 .slider .slick-dots li {
     list-style: none;
@@ -196,9 +196,42 @@
 }
 
 
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 80px;
+    width: 100%;
+    padding: 100px 0px;
+    z-index: 3;
+}
 
+.info__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: #95999c;
+    width: 100%;
+    padding: 0px 350px;
+    line-height: 30px;
+    gap: 35px 0px;
+    margin-bottom: 50px;
+}
 
+.info__content::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #69d2e7;
+}
 
+.services {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 .footer {
 }
