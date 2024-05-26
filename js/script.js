@@ -7,3 +7,14 @@ hamMenu.addEventListener('click', () => {
     offScreenMenu.classList.toggle('active');
     body.classList.toggle('lock');
 });
+
+$(document).ready(function() {
+    $('.slider').slick({
+        arrows: false,
+        dots: true,
+        adaptiveHeight: true,
+        Infinity: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+});
