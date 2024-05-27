@@ -58,6 +58,7 @@
 
 .menu__item:hover {
     border-bottom: 3px solid #69d2e7;
+    margin-bottom: -3px;
 }
 .menu__item:last-child {
     margin-left: auto;
@@ -228,9 +229,69 @@
     background-color: #69d2e7;
 }
 
+.info__links {
+    font-size: 0px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.info__link {
+    display: inline-block;
+    padding: 20px 0px 20px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.info__link:last-child {
+    padding-right: 30px;
+}
+
+.info__link:hover {
+    color: #333;
+}
+
+
 .services {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px -12px;
+    font-size: 0px;
+    gap: 90px 100px;
+}
+
+.service__item {
+    display: flex;
+    flex: 0 0 45.333%;
+    padding: 0px 12px;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.service__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    width: 30px;
+    height: 30px;
+}
+
+.service__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.service__text {
+    color: #666;
+    line-height: 30px;
 }
 
 .footer {
