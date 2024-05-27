@@ -63,6 +63,10 @@
 .menu__item:last-child {
     margin-left: auto;
 }
+.menu__item:last-child:hover {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
 
 .menu__link {
     color: #666;
