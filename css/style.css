@@ -54,6 +54,10 @@
 .menu__item {
     position: relative;
     padding: 30px 50px;
+    
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    margin-left: -1px;
 }
 
 .menu__item:hover {
@@ -62,6 +66,7 @@
 }
 .menu__item:last-child {
     margin-left: auto;
+    border: none;
 }
 .menu__item:last-child:hover {
     border-bottom: none;
@@ -285,6 +290,10 @@
     border: 1px solid #e0e0e0;
     width: 30px;
     height: 30px;
+}
+
+.service__icon:hover {
+    box-shadow: 0px 0px 20px 3px #e0e0e0;
 }
 
 .service__title {
