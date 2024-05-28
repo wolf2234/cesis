@@ -4,6 +4,7 @@
     top: 0px;
     left: 0px;
     z-index: 50;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .burger {
@@ -54,15 +55,14 @@
 .menu__item {
     position: relative;
     padding: 30px 50px;
-    
     border-right: 1px solid #e0e0e0;
     border-left: 1px solid #e0e0e0;
     margin-left: -1px;
 }
 
 .menu__item:hover {
-    border-bottom: 3px solid #69d2e7;
-    margin-bottom: -3px;
+    border-bottom: 4px solid #69d2e7;
+    margin-bottom: -4px;
 }
 .menu__item:last-child {
     margin-left: auto;
@@ -217,7 +217,7 @@
     z-index: 3;
 }
 
-.info__content {
+.info__text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,46 +231,73 @@
     margin-bottom: 50px;
 }
 
-.info__content::after {
+.info__text::after {
     content: '';
     width: 100px;
     height: 1px;
     background-color: #69d2e7;
 }
 
+.info__content {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    padding: 30px;
+}
+
+.info__nav {
+    display: block;
+    text-align: center;
+}
+
 .info__links {
+    display: inline-block;
     font-size: 0px;
     margin-bottom: 100px;
     text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 0px;
 }
 
 .info__link {
     display: inline-block;
-    padding: 20px 0px 20px 30px;
+    padding: 20px 0px 20px 0px;
+    margin-right: 30px;
+    margin-bottom: -1px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     color: #999;
     text-transform: uppercase;
     border-bottom: 1px solid #d3d3d3;
 }
 
 .info__link:last-child {
-    padding-right: 30px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .info__link:hover {
     color: #333;
 }
 
+.info__link.active {
+    color: #69d2e7;
+    border-bottom: 1px solid #69d2e7;
+}
 
 .services {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 0px -12px;
     font-size: 0px;
-    gap: 90px 100px;
+    gap: 90px 90px;
+}
+
+
+.services.active {
+    display: flex;
 }
 
 .service__item {
@@ -307,9 +334,26 @@
     line-height: 30px;
 }
 
-.footer {
+
+.about {
+    display: none;
+    width: 100%;
+}
+.about.active {
+    display: block;
+}
+.purchase {
+    display: none;
+    width: 100%;
+    background-color: greenyellow;
+    height: 300px;
+}
+.purchase.active {
+    display: block;
 }
 
+.footer {
+}
 
 
 @media (max-width: 1308px) {
