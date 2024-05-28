@@ -358,7 +358,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    background-image: url('/img/main/3/image.jpg');
+    background-image: url('../img/main/3/image.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
