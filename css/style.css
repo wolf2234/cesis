@@ -163,7 +163,7 @@
 
 .slider__item {
     background-image: url('../img/main/1/Image.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
     width: 400px;

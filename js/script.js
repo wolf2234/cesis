@@ -2,6 +2,9 @@ const hamMenu = document.querySelector(".burger");
 const offScreenMenu = document.querySelector(".menu");
 const body = document.querySelector('.body');
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    
 hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
@@ -10,7 +13,6 @@ hamMenu.addEventListener('click', () => {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
     
     const infoLinks = document.querySelector('.info__links');
     const infoContent = document.querySelector('.info__content');
