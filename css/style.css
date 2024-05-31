@@ -383,7 +383,7 @@
 
 .demo__item {
     padding: 100px 0px 60px 0px;
-    min-width: 300px;
+    min-width: 400px;
     flex-basis: auto;
     /* background-color: rgba(18,23,39, 0.5); */
 }
@@ -401,7 +401,7 @@
 }
 
 .demo__content {
-    width: 78%;
+    width: 85%;
 }
 
 .demo__label {
