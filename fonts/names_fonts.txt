@@ -1,0 +1,14 @@
+Myriad Pro - SemiBold, Bold, Regular, Light;
+Montserrat - SemiBold, Bold, Regular, Light;
+Open Sans - SemiBold, Bold, Regular, Light;
+Merriweather - SemiBold, Bold, Regular, Light;
+  - ;
+  - ;
+  - ;
+  - ;
+  - ;
+  - ;
+  - ;
+  - ;
+  - ;
+  - ;
