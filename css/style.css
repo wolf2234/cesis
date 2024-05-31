@@ -498,6 +498,7 @@
     /* border: 1px solid red; */
     width: 100%;
     padding: 40px 0px;
+    margin-bottom: 150px;
 }
 
 .brands__body::after {
@@ -528,7 +529,13 @@
 
 
 
-
+.brands__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+}
 
 
 
