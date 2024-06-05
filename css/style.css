@@ -569,8 +569,20 @@
 }
 
 .people-loves-cesis__item {
+    width: 50%;
+    height: 100%;
 }
 
+.video {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video__item {
+    border: 2px solid red;
+}
 
 .slider-love {
     position: relative;
@@ -667,7 +679,6 @@
     font-size: 22px;
     font-weight: 300;
     color: #fff;
-    margin-bottom: 30px;
 }
 
 
@@ -676,7 +687,7 @@
     color: #ccc;
     font-size: 16px;
     line-height: 30px;
-    width: 30%;
+    width: 54%;
     margin-bottom: 35px;
 }
 
@@ -684,6 +695,17 @@
     color: #fff;
 }
 
+.slider-love__img {
+    margin: 40px 0px;
+}
+
+.video {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 3;
+    padding: 0px 0px;
+}
 
 .footer {
 }
