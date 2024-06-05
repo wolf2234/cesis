@@ -57,16 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
     videoButtons.forEach(function (button) {
         button.addEventListener("click", function(element) {
             videos.forEach(function (video) {
-                if (video.hasAttribute('controls') && (video.dataset.parent == button.dataset.parent)) {
-                    video.removeAttribute('controls'); 
-                    button.style.display = "block";
-                } else {
-                    if (video.hasAttribute('data-parent') && (video.dataset.parent == button.dataset.parent)) {
-                        video.setAttribute('controls', '');
-                        button.style.display = "none";
+                video.addEventListener("pause", function (el) {
+                    if (video.hasAttribute('controls') && (video.dataset.parent == button.dataset.parent)) {
+                        video.removeAttribute('controls'); 
+                        button.style.display = "block";
                     }
+                });
+                if (video.hasAttribute('data-parent') && (video.dataset.parent == button.dataset.parent)) {
+                    video.setAttribute('controls', '');
+                    button.style.display = "none";
+                    video.play();
                 }
-
             });
         });
     });
