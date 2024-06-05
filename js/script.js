@@ -1,15 +1,18 @@
-const hamMenu = document.querySelector(".burger");
-const offScreenMenu = document.querySelector(".menu");
-const body = document.querySelector('.body');
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    const hamMenu = document.querySelector(".burger");
+    const offScreenMenu = document.querySelector(".menu");
+    const body = document.querySelector('.body');
+    const videos = document.querySelectorAll('.video__item');
+    const videoButtons = document.querySelectorAll('.video_button');
     
-hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
-    offScreenMenu.classList.toggle('active');
-    body.classList.toggle('lock');
-});
+    hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+        body.classList.toggle('lock');
+    });
 
 
 
@@ -50,5 +53,22 @@ hamMenu.addEventListener('click', () => {
             }
         });
     }
+
+    videoButtons.forEach(function (button) {
+        button.addEventListener("click", function(element) {
+            videos.forEach(function (video) {
+                if (video.hasAttribute('controls') && (video.dataset.parent == button.dataset.parent)) {
+                    video.removeAttribute('controls'); 
+                    button.style.display = "block";
+                } else {
+                    if (video.hasAttribute('data-parent') && (video.dataset.parent == button.dataset.parent)) {
+                        video.setAttribute('controls', '');
+                        button.style.display = "none";
+                    }
+                }
+
+            });
+        });
+    });
     
 });
