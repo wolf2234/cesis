@@ -735,6 +735,114 @@ border-left: 202px solid black; */
     margin: 40px 0px;
 }
 
+.plans {
+    position: relative;
+    width: 100%;
+    padding: 80px 0px;
+    z-index: 3;
+}
+.plans__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 90px 0px;
+}
+
+.plans__about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.plans__title {
+    font-size: 34px;
+    font-weight: 700;
+}
+.plans__text {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    width: 65%;
+    padding: 20px 0px 40px;
+    line-height: 45px;
+}
+
+.plans__about::after {
+    display: inline-block;
+    content: '';
+    background-color: #69d2e7;
+    width: 10%;
+    height: 1px;
+}
+
+
+.plans__items {
+    display: flex;
+    border: 1px solid rgba(149,153,156, 0.5);
+    border-radius: 22px;
+    padding: 70px 0px;
+    justify-content: space-between;
+}
+
+.plans__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 33.333%;
+    border-right: 1px solid rgba(149,153,156, 0.5);
+}
+
+.plans__item:last-of-type {
+    border-right: none;
+}
+
+.plans__title_size {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+
+.plans__image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 80px;
+}
+
+.plans__currency {
+    font-size: 22px;
+}
+.plans__price {
+    color: #69d2e7;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.plans__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0px;
+    margin-bottom: 60px;
+}
+.plans__link {
+    color: #a9a9a9;
+}
+.plans__button {
+    padding: 20px 50px;
+    border: 1px solid #000;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.plans__button:hover {
+    color: #fff;
+    background: linear-gradient(to right,  rgba(135,224,253,1) 0%,rgba(83,203,241,1) 25%,rgba(99,5,193,1) 100%);
+    border: 1px solid #fff;
+}
+
 
 .footer {
 }
