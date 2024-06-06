@@ -993,11 +993,6 @@ border-left: 202px solid black; */
     z-index: 4;
 }
 
-.design__button {
-}
-.design__content {
-}
-
 .design__date {
     display: inline-block;
     font-size: 13px;
@@ -1029,6 +1024,7 @@ border-left: 202px solid black; */
 
 .resource__body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
