@@ -795,6 +795,10 @@ border-left: 202px solid black; */
     border-right: 1px solid rgba(149,153,156, 0.5);
 }
 
+.plans__item:hover .plans__price {
+    color: #7b91f9;
+}
+
 .plans__item:last-of-type {
     border-right: none;
 }
