@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (video.hasAttribute('data-parent') && (video.dataset.parent == button.dataset.parent)) {
                     video.setAttribute('controls', '');
                     button.style.display = "none";
+                    video.requestFullscreen();
                     video.play();
                 }
             });
