@@ -849,11 +849,6 @@ border-left: 202px solid black; */
 }
 
 
-
-
-
-
-
 .events {
     position: relative;
     display: flex;
@@ -1144,7 +1139,7 @@ border-left: 202px solid black; */
     margin-top: 20px;
     content: '';
     background-color: #69d2e7;
-    width: 75%;
+    width: 66%;
     height: 2px;
 }
 
