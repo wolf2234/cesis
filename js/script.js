@@ -7,6 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.querySelector('.body');
     const videos = document.querySelectorAll('.video__item');
     const videoButtons = document.querySelectorAll('.video_button');
+    const formInputs = document.querySelectorAll('.form__input');
+
+    formInputs.forEach(function (formInput) {
+        formInput.addEventListener('change', function (element) {
+            if (formInput.value != '') {
+                formInput.classList.add('valid');
+            } else {
+                formInput.classList.remove('valid');
+            }
+        });
+    });
+
+
     
     hamMenu.addEventListener('click', () => {
         hamMenu.classList.toggle('active');

@@ -1174,10 +1174,28 @@ border-left: 202px solid black; */
     width: 40%;
 }
 
-.form__input, 
+.form__field {
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+
+
+.form__image {
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    width: 15px;
+    height: 12px;
+    z-index: 4;
+}
+
+.form__input,
 .form__select {
     padding: 20px 25px;
     color: #999;
+    width: 100%;
     background-color: transparent;
     border: 1px solid #434957;
     outline: none;
@@ -1189,6 +1207,24 @@ border-left: 202px solid black; */
     border: 1px solid #fff;
     color: #fff;
 }
+
+.form__input.valid {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.form__input.valid + .form__image {
+    display: inline-block;
+}
+
+.form__input:invalid {
+    border: 1px solid red;
+}
+.form__input:invalid + .form__image {
+    display: none;
+}
+
+
 
 .form__select {
     color: #7f8081;

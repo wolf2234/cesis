@@ -400,12 +400,24 @@
                         <h2 class="quote__title">Ready to talk?</h2>
                         <p class="quote__text">From nationally brands to your favorite local shops Cesis is trusted by many brands you know and love.</p>
                     </div>
-                    <div class="form">
+                    <div class="form" data-parent="quote">
                         <form action="#" method="post">
-                            <input type="text" name="username" class="form__input" placeholder="Name" autocomplete="off" required>
-                            <input type="email" value="" name="email" class="form__input" placeholder="Email" autocomplete="off" required>
-                            <input type="tel" value="" name="phone" placeholder="Phone" class="form__input" autocomplete="off" required>
-                            <input type="text" name="username" class="form__input" placeholder="Company Name" autocomplete="off" required>
+                            <div class="form__field" data-parent="quote">
+                                <input type="text" name="username" class="form__input" placeholder="Name" autocomplete="off" data-parent="quote">
+                                <img src="img/main/quote/check-small.png" class="form__image" alt="">
+                            </div>
+                            <div class="form__field" data-parent="quote">
+                                <input type="email" value="" name="email" class="form__input" placeholder="Email" autocomplete="off" data-parent="quote">
+                                <img src="img/main/quote/check-small.png" class="form__image" alt="">
+                            </div>
+                            <div class="form__field" data-parent="quote">
+                                <input type="tel" value="" name="phone" placeholder="Phone" class="form__input" autocomplete="off" data-parent="quote">
+                                <img src="img/main/quote/check-small.png" class="form__image" alt="">
+                            </div>
+                            <div class="form__field" data-parent="quote">
+                                <input type="text" name="username" class="form__input" placeholder="Company Name" autocomplete="off" data-parent="quote">
+                                <img src="img/main/quote/check-small.png" class="form__image" alt="">
+                            </div>
                             <select name="" id="" class="form__select">
                                 <option value="" selected>Your budget</option>
                                 <option value="">2</option>
