@@ -382,9 +382,10 @@
 }
 
 .demo__item {
+    position: relative;
+    display: flex;
     padding: 100px 0px 60px 0px;
-    min-width: 400px;
-    flex-basis: auto;
+    min-width: 450px;
     /* background-color: rgba(18,23,39, 0.5); */
 }
 
@@ -399,9 +400,16 @@
     width: 750px;
     z-index: 10;
 }
-
+.demo__img {
+    position: absolute;
+    left: 65px;
+    bottom: 40px;
+    width: 270px;
+    height: 520px;
+    z-index: 10;
+}
 .demo__content {
-    width: 85%;
+    width: 90%;
 }
 
 .demo__label {
