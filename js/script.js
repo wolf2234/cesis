@@ -9,6 +9,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const selects = document.querySelectorAll('.select');
     const selectsItems = document.querySelectorAll('.select__item');
 
+    const serviceIcons =  document.querySelectorAll('.service__icon');
+
+    const infoLinks = document.querySelector('.info__links');
+    const infoContent = document.querySelector('.info__content');
+    const infoLinksChildren = infoLinks.children;
+    const infoContentChildren = infoContent.children;
+
+
+    serviceIcons.forEach(function (serviceIcon) {
+        serviceIcon.addEventListener('mouseover', function (icon) {
+            let parent = serviceIcon.closest('.service__item');
+            let title = parent.querySelector('.service__title');
+            title.classList.add('active');
+        });
+        serviceIcon.addEventListener('mouseout', function (icon) {
+            let parent = serviceIcon.closest('.service__item');
+            let title = parent.querySelector('.service__title');
+            title.classList.remove('active');
+        });
+    });
+
 
     plansButtons.forEach(function (plansButton) {
         plansButton.addEventListener('mouseover', function (button) {
@@ -56,13 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.toggle('lock');
     });
 
-
-
-    
-    const infoLinks = document.querySelector('.info__links');
-    const infoContent = document.querySelector('.info__content');
-    const infoLinksChildren = infoLinks.children;
-    const infoContentChildren = infoContent.children;
 
     for (let infoLink of infoLinksChildren) {
         let infoLinkAttr = infoLink.dataset.infoAttr;
