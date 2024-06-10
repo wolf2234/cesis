@@ -1471,6 +1471,9 @@ border-left: 202px solid black; */
         top: 14px;
         transition: all 0.3s ease 0s;
     }
+    .main {
+        display: block;
+    }
     .menu {
         position: fixed;
         display: block;
@@ -1748,5 +1751,105 @@ border-left: 202px solid black; */
     .plans__item {
         flex-basis: 100%;
         border-right: none;
+    }
+    .events {
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .improve {
+        width: 100%;
+        padding: 115px 25px 30px;
+    }
+    .events__items {
+        width: 100%;
+        height: 100%;
+    }
+    .events__item {
+    }
+    .improve__date {
+        font-size: 11px;
+    }
+    .improve__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .improve__text {
+        font-size: 13px;
+    }
+    .improve__button {
+        font-size: 12px;
+        padding: 15px 30px;
+    }
+    .button {
+        top: 25px;
+        left: 15px;
+    }
+
+    .design {
+        padding: 0px 25px;
+    }
+    .design__content {
+        width: 100%;
+    }
+    .design__title {
+        font-size: 20px;
+    }
+    .design__body {
+        padding: 50px 0px 0px;
+    }
+    .resource {
+        padding: 50px 0px;
+    }
+    .resource__title {
+        font-size: 25px;
+    }
+    .resource__text {
+        font-size: 14px;
+        width: 90%;
+    }
+    .resource__button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .resource__button::after {
+        width: 18px;
+        height: 18px;
+    }
+
+    .quote {
+        top: 300px;
+        display: block;
+        height: 100%;
+    }
+
+    .quote__body {
+        padding: 30px 0px 20px;
+    }
+
+    .quote__title {
+        font-size: 25px;
+    }
+    .quote__title::after {
+        margin-top: 30px;
+    }
+    .quote__text {
+        font-size: 14px;
+        padding: 30px 0px;
+        width: 100%;
+    }
+    .form {
+
+    }
+    .form form {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .footer {
+        position: static;
+        display: block;
+        top: 80px;
+        z-index: 3;
     }
 }
