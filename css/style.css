@@ -716,7 +716,7 @@ border-left: 202px solid black; */
     z-index: 4;
 }
 
-.slider-love__label {
+.about__label {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -724,14 +724,14 @@ border-left: 202px solid black; */
     margin-bottom: 25px;
 }
 
-.slider-love__title {
+.about__title {
     font-size: 22px;
     font-weight: 300;
     color: #fff;
 }
 
 
-.slider-love__text {
+.about__text {
     text-align: center;
     color: #ccc;
     font-size: 16px;
@@ -740,11 +740,11 @@ border-left: 202px solid black; */
     margin-bottom: 35px;
 }
 
-.slider-love__label_color {
+.about__label_color {
     color: #fff;
 }
 
-.slider-love__img {
+.about__img {
     margin: 40px 0px;
 }
 
@@ -1602,5 +1602,105 @@ border-left: 202px solid black; */
     }
     .service__text {
         text-align: justify;
+    }
+    .demo {
+    }
+    .demo__item {
+        min-width: 0px;
+        width: 100%;
+        padding: 25px 0px 0px;
+    }
+    .demo__items {
+        flex-direction: column;
+        padding: 0px 15px;
+        row-gap: 0px;
+    }
+    .demo__image {
+        width: 100%;
+        height: 320px;
+    }
+    .demo__img {
+        top: -234px;
+        right: -20px;
+        left: auto;
+        width: 100px;
+        height: 190px;
+    }
+    .demo__content {
+        width: 100%;
+    }
+    .demo__label {
+        font-size: 12px;
+    }
+    .demo__title {
+        font-size: 30px;
+    }
+    .demo__text-medium {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .demo__text-sm {
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+    .demo__info {
+        width: 100%;
+    }
+    .demo__icon img {
+        width: 45px;
+        height: 45px;
+    }
+    .check-works__text {
+        font-size: 12px;
+    }
+    .brands__title {
+        font-size: 20px;
+    }
+    .brands__text {
+        font-size: 14px;
+        width: 90%;
+    }
+    .brands__items {
+        flex-direction: column;
+    }
+    .people-loves-cesis {
+    }
+    .people-loves-cesis__items {
+        flex-direction: column;
+    }
+    .people-loves-cesis__item { 
+        width: 100%;
+    }
+    .slider-love__item {
+        width: 100%;
+        padding: 150px 20px;
+        height: 100%;
+    }
+    .about__label {
+        font-size: 10px;
+    }
+    .about__title {
+        font-size: 20px;
+    }
+    .about__text {
+        font-size: 14px;
+        width: 100%;
+    }
+    .about__img {
+        width: 40px;
+        height: 30px;
+    }
+    .slider-love .slick-dots {
+        top: 80%;
+    }
+    .slider-love .slick-dots li button {
+        width: 25px;
+        height: 25px;
+    }
+    .slider-love .slick-dots li.slick-active button {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
     }
 }
