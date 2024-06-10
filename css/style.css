@@ -1536,7 +1536,7 @@ border-left: 202px solid black; */
         text-align: center;
     }
     .slider__title {
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 3px;
         word-spacing: 0px;
         margin-bottom: 10px;
@@ -1617,11 +1617,11 @@ border-left: 202px solid black; */
     }
     .demo__image {
         width: 100%;
-        height: 320px;
+        height: 100%;
     }
     .demo__img {
-        top: -234px;
-        right: -20px;
+        top: -735%;
+        right: -3%;
         left: auto;
         width: 100px;
         height: 190px;
@@ -1702,5 +1702,51 @@ border-left: 202px solid black; */
         width: 30px;
         height: 30px;
         background-color: #fff;
+    }
+    .video {
+        padding: 200px 0px;
+    }
+    
+    .video_button {
+        padding: 45px;
+    }
+    .video_button::before {
+        position: absolute;
+        top: 38px;
+        left: 41px;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-bottom-width: 6px;
+        border-top-width: 6px;
+        border-left: 13px solid black;
+    }
+    .plans {
+        padding: 0px 0px 50px; 
+    }
+    .plans__title {
+        font-size: 30px;
+    }
+    .plans__text {
+        width: 100%;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .plans__about::after {
+        display: inline-block;
+        content: '';
+        background-color: #69d2e7;
+        width: 50%;
+        height: 1px;
+    }
+    .plans__items {
+        padding: 30px 0px;
+        flex-direction: column;
+        row-gap: 80px;
+    }
+    .plans__item {
+        flex-basis: 100%;
+        border-right: none;
     }
 }
