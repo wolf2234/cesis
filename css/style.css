@@ -1722,6 +1722,10 @@ border-left: 202px solid black; */
 
 
 @media (max-width: 1670px) {
+    .info {
+        padding-top: 0px;
+    }
+
     .header__link {
         margin-right: 100px;
     }
