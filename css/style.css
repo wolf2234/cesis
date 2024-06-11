@@ -555,6 +555,9 @@
     position: relative;
     z-index: 6;
 }
+.brands__image:hover {
+    background: linear-gradient(to right,  rgba(135,224,253,1) 0%,rgba(83,203,241,1) 25%,rgba(99,5,193,1) 100%);
+}
 
 .brands__image::before {
     display: block;
@@ -2044,9 +2047,11 @@ border-left: 202px solid black; */
     .demo {
     }
     .demo__item {
-        min-width: 0px;
         width: 100%;
         padding: 25px 0px 0px;
+    }
+    .demo__item:last-of-type {
+        left: 0px;
     }
     .demo__items {
         flex-direction: column;
