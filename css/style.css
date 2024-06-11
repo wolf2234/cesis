@@ -1853,8 +1853,11 @@ border-left: 202px solid black; */
 
 
 @media (max-width: 780px) {
+    .menu__link {
+        font-size: 15px;
+    }
     .menu__item {
-        padding: 8px 12px;
+        height: auto;
     }
     .form form {
         width: 60%;
